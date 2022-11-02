@@ -1,15 +1,19 @@
 import Footer from './Footer';
 import Header from './Header';
+import Aside from './Aside';
 import { useReducer, Fragment, useState } from 'react';
 
 const Layout = ({ children }) => {
   return (
     <Fragment>
-      <Header />
-        <main>
-          {children}
-        </main>
-      <Footer />
+      {/* <div className='max-w-[120rem]'> */}
+        <Header />
+        <Aside />
+          <main>
+            {children}
+          </main>
+        <Footer />
+      {/* </div> */}
     </Fragment>
   );
 };
