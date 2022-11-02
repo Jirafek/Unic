@@ -52,7 +52,7 @@ const Aside = () => {
                     <div className='absolute w-[20px] h-[20px] left-1/2 -top-[12px]' style={{ backgroundImage: 'url(/img/quest.png)', transform: 'translate(-56%)' }}></div>
                     <h2 className='font-bold text-center mb-[1.875rem]'>Учебный департамент</h2>
                     <p className='font-normal text-center'>Задайте свой вопрос и специалист комиссии проконсультирует Вас!</p>
-                    <button className='w-full h-10 bg-white rounded-[5px] mt-10 shadow-[0px_5px_10px_0px_rgba(0, 0, 0, 0.5)]'>Задать вопрос</button>
+                    <button style={ { boxShadow: '0px 5px 10px 0px rgba(0, 0, 0, 0.5)' } } className='w-full h-10 bg-white rounded-[5px] mt-10'>Задать вопрос</button>
                 </div>
             </aside>
         </Fragment>
