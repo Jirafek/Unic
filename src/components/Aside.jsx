@@ -47,6 +47,13 @@ const Aside = () => {
                     <div style={ {top: 50 + (currentPage-1)*40 + (currentPage-1)*30 + 'px'} } className='absolute duration-500 left-0 h-10 w-[0.625rem] rounded-r-[20px] bg-[#2B73FF] justify-self-start'></div>
                     {assembleData()}
                 </div>
+                <div className='h-[16.25rem] px-5 pt-[3.125rem] text-[0.688rem] text-[#3C517B] relative w-60 mt-[3.75rem] mx-auto' style={{ backgroundImage: 'url(/img/faq.png)' }}>
+                    <div className='absolute w-[6.25rem] h-[6rem] left-1/2 -top-[1.875rem]' style={{ backgroundImage: 'url(/img/green_sqr.png)', transform: 'translate(-50%)' }}></div>
+                    <div className='absolute w-[20px] h-[20px] left-1/2 -top-[12px]' style={{ backgroundImage: 'url(/img/quest.png)', transform: 'translate(-56%)' }}></div>
+                    <h2 className='font-bold text-center mb-[1.875rem]'>Учебный департамент</h2>
+                    <p className='font-normal text-center'>Задайте свой вопрос и специалист комиссии проконсультирует Вас!</p>
+                    <button className='w-full h-10 bg-white rounded-[5px] mt-10 shadow-[0px_5px_10px_0px_rgba(0, 0, 0, 0.5)]'>Задать вопрос</button>
+                </div>
             </aside>
         </Fragment>
     );
