@@ -1,18 +1,15 @@
-import { Fragment } from 'react';
-import CTA from './CTA';
 import Footer from './Footer';
 import Header from './Header';
 
-const Layout = ({ children, whiteHeader, isNeedCTA, digital }) => {
+const Layout = ({ children }) => {
   return (
-    <Fragment>
-      <Header white={whiteHeader} digital={digital} />
-      <main>
-        {children}
-        {!isNeedCTA && <CTA />}
-      </main>
+    <>
+      <Header />
+        <main>
+          {children}
+        </main>
       <Footer />
-    </Fragment>
+    </>
   );
 };
 
