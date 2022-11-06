@@ -70,3 +70,7 @@ html {
 .head-group_btn:hover .head-arrow {
   animation: Transalting 700ms;
 }
+
+p {
+  letter-spacing: 0.03rem;
+}

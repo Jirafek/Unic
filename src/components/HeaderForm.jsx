@@ -39,7 +39,7 @@ const HeaderForm = () => {
                 className="w-[20.75rem] h-[1.875rem] rounded-[5px] bg-[#FFFFFF] pl-5 outline-none" 
                 name="program" 
                 id="hf3">
-                    <option value="null">ВВыберите предпочтительный способ связи</option>
+                    <option value="null">Выберите предпочтительный способ связи</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>

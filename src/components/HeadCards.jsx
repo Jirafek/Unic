@@ -1,12 +1,12 @@
 import { cards_data } from '../data/headcardhelper';
-import randm from '../data/RandomKey';
+import uuid from 'react-uuid';
 
 const HeadCards = () => {
     function CreateCards() {
         let newArr = cards_data.map((el, i) => {
             return (
                 <div 
-                key={randm()} 
+                key={uuid()} 
                 style={{ boxShadow: '0px 20px 20px rgba(0, 0, 0, 0.1)' }} 
                 className="relative h-[12.5rem] w-[20.625rem] text-[0.688rem] flex flex-col justify-end duration-500 hover:-translate-y-[10px]">
                     <div 
@@ -18,7 +18,7 @@ const HeadCards = () => {
                         <ul className='text-[0.6875rem] flex flex-col text-[#3C517B] mb-10'>
                             {el.items.map(itm_el => {
                                 return (
-                                    <li className='flex items-center'><div className='w-[2px] h-[2px] rounded-[50%] bg-[#3C517B] mr-2'></div> {itm_el}</li>
+                                    <li key={uuid()} className='flex items-center'><div className='w-[2px] h-[2px] rounded-[50%] bg-[#3C517B] mr-2'></div> {itm_el}</li>
                                 );
                             })}
                         </ul>

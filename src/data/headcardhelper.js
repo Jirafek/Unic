@@ -1,5 +1,5 @@
 
-export let cards_data = [
+let cards_data = [
     {
         name: 'Факультет производственной безопасности',
         items: [
@@ -53,4 +53,6 @@ export let cards_data = [
         }
     }
 ]
+
+export { cards_data }
 
