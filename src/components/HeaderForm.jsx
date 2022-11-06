@@ -46,8 +46,8 @@ const HeaderForm = () => {
                 <input className="w-[15.5rem] h-[1.875rem] rounded-[5px] bg-[#FFFFFF] text-center outline-none" placeholder="Укажите контакт" type="text" />
             </div>
             <input className="w-full h-[1.875rem] rounded-[5px] bg-[#FFFFFF] pl-5 outline-none" placeholder="Как специалист комиссии может к вам обращаться?" type="text" />
-            <div className="flex justify-between">
-                <div className='flex gap-x-[10px]'>
+            <div className="flex justify-between mt-5">
+                <div className='flex gap-x-[10px] items-center'>
                     <div onClick={ChangerDocsAgreement} className='w-[40px] h-[20px] bg-[#E6E6E6] rounded-[10px]'>
                         <div style={{ backgroundColor: btnState ? '#2A73FF' : '#d4d4d4', transform: `translateX(${btnState ? '20px' : '0'})` }} className='h-full duration-500 w-[20px] rounded-[50%]'></div>
                     </div>
