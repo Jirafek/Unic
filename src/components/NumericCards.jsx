@@ -1,5 +1,4 @@
 import uuid from 'react-uuid';
-
 let cards_data2 = [
     {
         miniImg: '/img/minic1.png',
@@ -32,7 +31,6 @@ let cards_data2 = [
         text: 'Назначение личного куратора, который ответит на вопросы и поможет с заданиями'
     },
 ]
-
 const NumericCards = () => {
     function CreateNumericItems() {
         let items = cards_data2.map((el, i) => {
