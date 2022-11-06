@@ -61,7 +61,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #areas::before {
-  left: 0;
-  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-} */
+@keyframes Transalting {
+  0% { transform: translateX(0) }
+  50% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+
+.head-group_btn:hover .head-arrow {
+  animation: Transalting 700ms;
+}
