@@ -19,7 +19,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='bg-[#F3F7FF] w-[44rem] h-[28.125rem]'>
-                        <div className='bg-[#E6FFCD] w-full h-10 text-[0.688rem] flex items-center justify-center'>
+                        <div className='bg-[#E6FFCD] w-full h-10 text-[0.688rem] flex items-center justify-center rounded-t-[5px]'>
                             Выберите нужную программу и рассчитайте стоимость обучения
                         </div>
                         <HeaderForm />

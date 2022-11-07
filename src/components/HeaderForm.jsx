@@ -9,7 +9,7 @@ const HeaderForm = () => {
     }
 
     return (
-        <form className="px-[3.125rem] py-[1.875rem] text-[0.625rem] flex flex-col gap-y-[1.875rem] text-[#8D8D8D]">
+        <form className="px-[3.125rem] py-[1.875rem] text-[0.625rem] flex flex-col gap-y-[1.875rem] text-[#8D8D8D] rounded-b-[5px]">
             <select 
             className="w-full h-[1.875rem] rounded-[5px] bg-[#FFFFFF] pl-5 outline-none" 
             name="facl" 
