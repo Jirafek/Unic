@@ -1,10 +1,10 @@
 import { m } from 'framer-motion';
-import { useReducer, Fragment, useState } from 'react';
+import { Fragment } from 'react';
 
 const Header = () => {
     return (
         <Fragment>
-          <header className='fixed top-0 left-0 z-10 w-full bg-[#F3F7FF] h-[120px] flex items-center border-b border-[#E0E0E0] text-[0.688rem] pr-[100px]'>
+          <header className='fixed top-0 left-0 z-[100] w-full bg-[#F3F7FF] h-[120px] flex items-center border-b border-[#E0E0E0] text-[0.688rem] pr-[100px]'>
             <div className='w-[20rem] h-full flex items-center justify-center border-r border-[#E0E0E0]'>
                 <img className='w-[14.375rem] h-20' src="/img/logo.png" alt="" />
             </div>

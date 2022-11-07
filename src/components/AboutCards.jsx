@@ -32,7 +32,7 @@ const AboutCards = () => {
     }
 
     return (
-        <div className='flex justify-between text-[#3C517B] text-[0.688rem]'>
+        <div className='flex justify-between text-[#3C517B] text-[0.688rem] mb-[6.25rem]'>
             <div className='w-[20.313rem] h-[40rem] relative flex'>
                 <div style={{ boxShadow: '0px 20px 20px rgba(0, 0, 0, 0.1)' }} className='w-[18.75rem] rounded-[5px] pt-5 pb-[1.875rem] h-full flex flex-col items-center bg-[#F3F7FF]'>
                     <img className='w-[16.875rem]' src="/img/aboutcards.png" alt="" />

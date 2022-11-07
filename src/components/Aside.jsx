@@ -32,7 +32,7 @@ const Aside = () => {
 
     return (
         <Fragment>
-            <aside className='w-80 fixed bg-[#F3F7FF] py-[3.125rem] border-r border-[#E0E0E0]'>
+            <aside className='w-[19.938rem] fixed bg-[#F3F7FF] py-[3.125rem]'>
                 <div className='flex flex-col gap-y-[1.875rem]'>
                     <div style={ {top: 50 + (currentPage-1)*40 + (currentPage-1)*30 + 'px'} } className='absolute duration-500 left-0 h-10 w-[0.625rem] rounded-r-[20px] bg-[#2B73FF] justify-self-start'></div>
                     {assembleData()}

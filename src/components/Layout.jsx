@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       {/* <div className='max-w-[120rem]'> */}
         <Header />
         <Aside />
-          <main className='h-[1000px]'>
+          <main>
             {children}
           </main>
         <Footer />
