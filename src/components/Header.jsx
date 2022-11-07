@@ -28,7 +28,7 @@ const Header = () => {
                 </button>
             </div>
             <div className='flex gap-x-5 ml-[3.125rem]'>
-                <button className='w-[11.25rem] h-[3.125rem] rounded-[5px] border border-[#2B73FF] text-[#2B73FF]'>
+                <button className='w-[11.25rem] h-[3.125rem] rounded-[5px] border border-[#2B73FF] text-[#2B73FF] bg-[#FFFFFF]'>
                     Проверить лицезию
                 </button>
                 <button className='w-[11.25rem] h-[3.125rem] bg-[#3C517B] rounded-[5px] font-bold text-white'>

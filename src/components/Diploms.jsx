@@ -42,7 +42,7 @@ const Diploms = () => {
                 </SwiperSlide>
             } else {
                 current_el = <SwiperSlide key={uuid()} className='flex flex-col gap-y-[1.875rem] w-[12.5rem]'>
-                    <div className='w-[12.5rem] h-[18.438rem] border-dashed border-[2px] rounded-[5px] flex justify-center items-center text-[#3C517B] text-[0.625rem] border-[#2A73FF]'>
+                    <div className='w-[12.5rem] h-[18.438rem] bg-white border-dashed border-[2px] rounded-[5px] flex justify-center items-center text-[#3C517B] text-[0.625rem] border-[#2A73FF]'>
                         <p className='text-center max-w-[200px]'>Скоро здесь появится обновленный документ</p>
                     </div>
                     <p className='text-[#3C517B] text-[0.625rem] text-center'>

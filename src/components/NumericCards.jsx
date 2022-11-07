@@ -53,7 +53,10 @@ const NumericCards = () => {
             <div className='flex gap-x-[4.375rem] gap-y-[1.875rem] max-w-[48.125rem] flex-wrap'>
                 <CreateNumericItems />
             </div>
-            <img className='w-[38.125rem]' src="/video/prof.gif" alt="" />
+            <div className='relative'>
+                <div className='absolute w-full h-[4px] bg-[#fcfcfc] left-0 top-0'></div>
+                <img className='w-[38.125rem]' src="/video/prof.gif" alt="" />
+            </div>
         </div>
     );
 }

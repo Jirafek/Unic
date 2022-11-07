@@ -41,7 +41,7 @@ const Home = () => {
                 </p>
                 <AboutCards />
                 <div className='flex gap-x-[5.188rem] text-[#3C517B] relative mb-[6.25rem]'>
-                    <img className='h-[43.75rem] absolute z-[1] right-0 -top-24' src="/img/bg_gerd_right.png" alt="" />
+                    <img className='h-[43.75rem] absolute z-[1] -right-[6.25rem] -top-24' src="/img/bg_gerd_right.png" alt="" />
                     <div className='bg-[#D9D9D9] w-[42.688rem] h-[31.25rem] rounded-[10px]'></div>
                     <div className='flex flex-col z-10'>
                         <h2 className='text-[0.875rem] font-medium tracking-[0.05rem] mb-[1.875rem]'>ЗАОЧНОЕ ОБУЧЕНИЕ <span className='text-[#2A73FF]'>С ПРИМЕНЕНИЕМ ДИСТАНЦИОННЫХ ТЕХНОЛОГИЙ</span></h2>

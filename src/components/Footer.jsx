@@ -23,7 +23,7 @@ const Footer = () => {
     function CreateFooterBlocks() {
         let items = footer_data.map((el, i) => {
             return (
-                <div key={uuid()} style={{ marginRight: i == 0 ? '20px' : '0' }} className="flex relative flex-col pl-[20px] bg-white w-[18.75rem] h-[6.25rem] rounded-[5px] pt-[20px] pb-[15px] text-[#3C517B] text-[0.625rem]">
+                <div key={uuid()} style={{ marginRight: i == 0 ? '20px' : '0', boxShadow: '0px 20px 20px rgba(0, 0, 0, 0.1)' }} className="flex duration-500 hover:-translate-y-[10px] relative flex-col pl-[20px] bg-white w-[18.75rem] h-[6.25rem] rounded-[5px] pt-[20px] pb-[15px] text-[#3C517B] text-[0.625rem]">
                     <div className="flex flex-col">
                         <p>
                             {

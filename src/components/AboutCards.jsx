@@ -5,7 +5,7 @@ const AboutCards = () => {
     function CreateAboutCardElements() {
         let items = data_cards.map((el, i) => {
             return (
-                <div key={uuid()} className='w-[20.313rem] h-[40rem]  relative flex'>
+                <div style={{width: i === 2 ? '18.75rem' : '20.313rem'}} key={uuid()} className='h-[40rem]  relative flex'>
                     <div style={{ boxShadow: '0px 20px 20px rgba(0, 0, 0, 0.1)' }} className='w-[18.75rem] rounded-[5px] pb-[1.875rem] h-full flex flex-col items-center bg-[#F3F7FF]'>
                         <div className='bg-[#E6FFCD] w-full h-[4.688rem] flex justify-center items-center rounded-t-[5px] mb-5'>
                             <p className='text-center'>
@@ -21,9 +21,12 @@ const AboutCards = () => {
                         </button>
                     </div>
 
-                    <div className='mt-[20.813rem] w-[1.563rem] h-[3.125rem] head-group_btn' style={{ backgroundImage: 'url(/img/go_next.png)' }}>
-                        <img className='mt-[18px] ml-[5px] head-arrow' src="/img/miniArrow.png" alt="" />
-                    </div>
+                    {
+                        i === 2 ? '' : 
+                        <div className='mt-[20.813rem] w-[1.563rem] h-[3.125rem] head-group_btn' style={{ backgroundImage: 'url(/img/go_next.png)' }}>
+                            <img className='mt-[18px] ml-[5px] head-arrow' src="/img/miniArrow.png" alt="" />
+                        </div>
+                    }
                 </div>
             );
         });
