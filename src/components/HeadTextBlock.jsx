@@ -6,7 +6,7 @@ const HeadTextBlock = () => {
         let items = text_block_Data.map(el => {
             return (
                 <div key={uuid()} className='relative text-[#3C517B]'>
-                    <div className='px-[0.625rem] rounded-[5px] bg-[#E6FFCD] text-[0.625rem] flex justify-center items-center absolute left-1/2 -translate-x-[50%] -top-[1.563rem] w-[17.5rem] h-[3.125rem]'>
+                    <div className='px-[0.625rem] rounded-[5px] bg-[#E6FFCD] text-center text-[0.625rem] flex justify-center items-center absolute left-1/2 -translate-x-[50%] -top-[1.563rem] w-[17.5rem] h-[3.125rem]'>
                         {
                             el.text
                         }
