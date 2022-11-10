@@ -12,12 +12,14 @@ module.exports = {
       },
       screens: {
         '3xl': '2500px',
-        'vsm': '400px'
+        'vsm': '400px',
+        'mid': '1920px',
+        'cent': '1800px'
       },
       keyframes: {
-        jump: {
-          '0%, 100%': { transform: 'translate(0, 0)' },
-          '50%': { transform: 'translate(0, -20px)' },
+        preload: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
         }
       }
     },

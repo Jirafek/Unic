@@ -49,7 +49,7 @@ const NumericCards = () => {
     }
 
     return (
-        <div className='flex items-center gap-x-[4.375rem] relative'>
+        <div className='flex mid:flex-row flex-col items-center gap-[4.375rem] relative'>
             <div className='flex gap-x-[4.375rem] gap-y-[1.875rem] max-w-[48.125rem] flex-wrap'>
                 <CreateNumericItems />
             </div>

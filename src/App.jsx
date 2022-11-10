@@ -1,13 +1,21 @@
-import { lazy } from 'react';
+import React, { lazy } from 'react';
+import { Lines } from 'react-preloaders';
 import { Routes, Route } from 'react-router-dom';
 
-const Home = lazy(() => import('./pages/Home'))
+const Home = lazy(() => {
+  return new Promise(res => {
+    setTimeout(() => res(import('./pages/Home')), 800);
+  });
+});
 
-function App() {
+function App(num) {
+
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-    </Routes>
+    <React.Fragment>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+    </React.Fragment>
   );
 }
 

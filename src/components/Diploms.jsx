@@ -1,5 +1,21 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper';
 import uuid from 'react-uuid';
+
+const breakpoints = {
+  1000: {
+    slidesPerView: 3
+  },
+  1920: {
+    slidesPerView: 6,
+  },
+};
+
+const modules = [Autoplay]
+
+const autoplay = {
+  delay: 2000
+};
 
 const diploms_data = [
     {
@@ -34,18 +50,18 @@ const Diploms = () => {
             let current_el
 
             if (el.src) {
-                current_el = <SwiperSlide key={uuid()} className='flex flex-col gap-y-[1.875rem] w-[12.5rem] group'>
-                    <img style={{ boxShadow: '0px 20px 20px rgba(0, 0, 0, 0.1)' }} className='w-full rounded-[5px] duration-500 group-hover:scale-110' src={el.src} alt="" />
-                    <p className='text-[#3C517B] text-[0.625rem] text-center'>
+                current_el = <SwiperSlide key={uuid()} style={{ width: '12.5rem' }} className='flex flex-col gap-y-[1.875rem] group'>
+                    <img style={{ boxShadow: '0px 20px 20px rgba(0, 0, 0, 0.1)' }} className='w-[12.5rem] h-[18.438rem] rounded-[5px] duration-500 group-hover:scale-110' src={el.src} alt="" />
+                    <p className='text-[#3C517B] text-[0.625rem] text-center max-w-[12.5rem]'>
                         {el.text}
                     </p>
                 </SwiperSlide>
             } else {
-                current_el = <SwiperSlide key={uuid()} className='flex flex-col gap-y-[1.875rem] w-[12.5rem]'>
+                current_el = <SwiperSlide key={uuid()} style={{ width: '12.5rem' }} className='flex flex-col gap-y-[1.875rem]'>
                     <div className='w-[12.5rem] h-[18.438rem] bg-white border-dashed border-[2px] rounded-[5px] flex justify-center items-center text-[#3C517B] text-[0.625rem] border-[#2A73FF]'>
                         <p className='text-center max-w-[200px]'>Скоро здесь появится обновленный документ</p>
                     </div>
-                    <p className='text-[#3C517B] text-[0.625rem] text-center'>
+                    <p className='text-[#3C517B] text-[0.625rem] text-center max-w-[12.5rem]'>
                         {el.text}
                     </p>
                 </SwiperSlide>
@@ -63,10 +79,16 @@ const Diploms = () => {
                <span className="text-[#2A73FF]">РАЗРЕШИТЕЛЬНАЯ ДОКУМЕНТАЦИЯ</span> УНИВЕРСИТЕТА
             </h2>
             <Swiper
-                className='flex justify-between'
-                centeredSlides
+                style={{ height: '22.188rem' }}
+                className='flex mid:w-full w-[43.75rem]'
+                breakpoints={breakpoints}
+                allowTouchMove={false}
+                autoplay={autoplay}
+                loop
+                speed={2000}
+                modules={modules}
             >
-                <CreateSlides />
+                {CreateSlides()}
             </Swiper>
         </div>
     );

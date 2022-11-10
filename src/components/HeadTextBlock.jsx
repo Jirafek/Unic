@@ -20,9 +20,9 @@ const HeadTextBlock = () => {
     }
 
     return (
-        <div className='flex justify-between text-[#3C517B]'>
-            <div className='flex flex-col gap-y-[4.688rem] max-w-[37.5rem] relative'>
-                <img className='absolute bottom-0 -left-[50px]' src="/img/bg_gerb_left.png" alt="" />
+        <div className='flex justify-between text-[#3C517B] mid:flex-row flex-col mid:items-start items-center'>
+            <div className='flex flex-col gap-y-[4.688rem] max-w-[37.5rem] relative mid:mb-0 mb-[40px]'>
+                <img className='absolute bottom-0 -left-[50px] mid:block hidden' src="/img/bg_gerb_left.png" alt="" />
                 <div className=''>
                     <h2 className='mb-[2.344rem] text-[0.875rem] font-medium tracking-[0.05rem]'>
                         <span className='text-[#2A73FF]'>ОЧНОЕ ОБУЧЕНИЕ</span> В ОБРАЗОВАТЕЛЬНОМ КЛАСТЕРЕ
@@ -55,7 +55,7 @@ const HeadTextBlock = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-wrap gap-x-[4.5rem] gap-y-[4.688rem] justify-end'>
+            <div className='flex flex-wrap gap-x-[4.5rem] gap-y-[4.688rem] justify-end mid:flex-row flex-col'>
                 <CreateImagedItems />
             </div>
         </div>

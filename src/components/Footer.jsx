@@ -23,7 +23,7 @@ const Footer = () => {
     function CreateFooterBlocks() {
         let items = footer_data.map((el, i) => {
             return (
-                <div key={uuid()} style={{ marginRight: i == 0 ? '20px' : '0', boxShadow: '0px 20px 20px rgba(0, 0, 0, 0.1)' }} className="flex duration-500 hover:-translate-y-[10px] relative flex-col pl-[20px] bg-white w-[18.75rem] h-[6.25rem] rounded-[5px] pt-[20px] pb-[15px] text-[#3C517B] text-[0.625rem]">
+                <div key={uuid()} style={{ boxShadow: '0px 20px 20px rgba(0, 0, 0, 0.1)' }} className="flex duration-500 hover:-translate-y-[10px] relative flex-col pl-[20px] bg-white w-[18.75rem] h-[6.25rem] rounded-[5px] pt-[20px] pb-[15px] text-[#3C517B] text-[0.625rem]">
                     <div className="flex flex-col">
                         <p>
                             {
@@ -57,8 +57,10 @@ const Footer = () => {
     }
 
     return (
-        <footer className="h-40 bg-[#F3F7FF] pl-[3.125rem] pr-[6.25rem] ml-[19.938rem] border-l border-[#E0E0E0]">
-            <div className="flex items-center h-full">
+        <footer className="mid:h-40 h-[24rem] bg-[#F3F7FF] pl-[3.125rem] pr-[6.25rem] xl:ml-[19.938rem] xl:border-l border-[#E0E0E0] mid:pb-0 pb-[1.875rem] xl:w-[calc(100%-20rem)] w-full">
+            <div className="flex items-center h-full mid:flex-row flex-col-reverse gap-y-[1.875rem]">
+
+                <div className='flex items-center mr-[1.875rem]'>
                 <img className="h-20 mr-[1.875rem]" src="/img/footer_gerb.png" alt="" />
                 <div className="flex flex-col text-[0.625rem] text-[#3C517B] max-w-xs h-20 justify-between mr-[1.5rem]">
                     <p>Лицензия на право ведения образовательной деятельности № Л035-01298-77/00622306 выдана Департаментом образования и науки города Москвы</p>
@@ -69,7 +71,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <img className="w-[5.625rem] mr-10" src="/img/vtb.png" alt="" />
-                <div className="flex flex-col justify-between h-20 text-[0.625rem] text-[#3C517B] mr-[1.875rem]">
+                <div className="flex flex-col justify-between h-20 text-[0.625rem] text-[#3C517B]">
                     <div className="flex flex-col">
                         <p>Р/С 40703810624710000001</p>
                         <p>К/С 30101810145250000411</p>
@@ -77,7 +79,11 @@ const Footer = () => {
                     </div>
                     <p>Банк филиал «Центральный» Банка ВТБ</p>
                 </div>
-                <CreateFooterBlocks />
+                </div>
+
+                <div className='flex gap-[1.875rem] mid:flex-row flex-col'>
+                    <CreateFooterBlocks />
+                </div>
             </div>
         </footer>
     );
